@@ -1,8 +1,44 @@
+*{
+    overflow:hidden;
+}
+body{
+    background-color: #07252d;
+    justify-content: center;
+    align-items:center;
+}
+.writ h1{
+    text-align: center;
+    position:relative;
+    font-size: 5em;
+    color: #0e3742;
+    text-transform: uppercase;
+    width:100%;
+    -webkit-box-reflect: below -40px linear-gradient(transparent,#0004);
+
+}
+.writ h1 span{
+    animation: animate 5s linear infinite;
+}
+.writ h1 span:nth-child(even){
+    animation-delay:0.4s;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color:#0e3742;
+        text-shadow:none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow:0 0 10px #03bcf4,
+        0 0 20px #03bcf4;
+    }
+}
+
 .calculator{
-    border: 2px solid;
+    border:2px solid white;
     height:500px;
     width:300px;
-    margin:100px auto;
+    margin:1px auto;
 }
 table{
     width:100%;
