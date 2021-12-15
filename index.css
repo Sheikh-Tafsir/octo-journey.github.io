@@ -1,7 +1,104 @@
+*{
+    overflow-x: hidden;
+}
 body{
     background-color:rgb(31, 29, 29);
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height:800px;
+    margin:0;
+    padding:0;
+}
+.cov{
+    height:800px;
+}
+.header{
+    display:flex;
+    padding:10px;
+}
+.headlogo{
+    width:30%;
+    text-align:center;
+    position:fixed;
+}
+.headname:hover{
+    color:white;
+}
+.headmenu{
+    position:fixed;
+    text-align:center;
+    width:70%;
+    padding:20px 500px;
+}
+
+.headmenu a{
+    text-decoration: none;
+    color:grey;
+    font-size: 1.5rem;
+    font-weight:bold;
+    padding:0 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    position:relative;
+    
+}
+.headmenu a:after{
+    content:"";
+    position:absolute;
+    display:block;
+    background-color: #ff3c78;
+    height:2px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.headmenu a:hover:after{
+    width:100%;
+}
+.headmenu a:hover{
+    color:white;
+}
+.home{
+    text-align: center;
+    padding:50px;
+}
+.home img{
+    padding:100px 0 0 0;
+}
+.home h1{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size: 3.5rem;
+}
+.banner{
+    padding:0 150px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+.banner h1,h2{
+    margin:0px;
+}
+.banner h1{
+    width:70%;
+    font-size:3rem;
+    letter-spacing: 0.5px;
+}
+.banner h2{
+    width:70%;
+    font-size:2.5rem;
+    letter-spacing: 0.5px;
+}
+.banner button{
+    padding:2px 3px;
+    background-color:#ff3c78;
 }
 .types{
+    background-color: black;
+    width: 100%;
     display:flex;
 }
 .links{
