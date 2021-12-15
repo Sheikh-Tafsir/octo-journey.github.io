@@ -1,0 +1,38 @@
+.calculator{
+    border: 2px solid;
+    height:500px;
+    width:300px;
+    margin:100px auto;
+}
+table{
+    width:100%;
+    border:none;
+}
+td{
+    width:25%;
+}
+button{
+    background-color: black;
+    color:white;
+    font-size: 25px;
+    height:75px;
+    width:100%;
+}
+.buttc{
+    background-color:rgb(202, 74, 164);
+}
+.butte{
+    background-color:skyblue;
+}
+.butt:hover, .buttc:hover,.butte:hover{
+    background-color: rgb(143, 136, 136);
+}
+#screen{
+    width:97%;
+    height:95px;
+    text-align: center;
+    font-size:30px;
+    background-color: rgb(59, 59, 97);
+    color:white;
+    
+}
