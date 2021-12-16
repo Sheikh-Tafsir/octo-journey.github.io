@@ -59,6 +59,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     /*height:800px;*/
+    margin:0% auto 5% auto;
 }
 .banner .motto{
     color:whitesmoke;
@@ -75,7 +76,8 @@ body{
     font-size: 3.8rem;
 }
 .banner .motto button{
-    background-color: rgb(106, 201, 106);
+    /*background-color: rgb(106, 201, 106);*/
+    background-color: #ff3c78;
     padding: 5px 10px;
     color:white;
     font-style: bold;
@@ -104,6 +106,7 @@ body{
     background-color: black;
     width: 100%;
     display:flex;
+    margin:0% auto 5% auto;
 }
 .links{
     background-color:rgb(22, 21, 21);
@@ -124,14 +127,16 @@ body{
     color:white;
     font-size: 3rem;
     font-weight:italic;
-}
 
+}
+.links a:hover{
+    color:#ff3c78;
+}
 .about{
     display:flex;
     width:90%;
     /*border: 5px solid white;*/
-    margin:0% auto;
-
+    margin:0% auto 5% auto;
 }
 .about img{
     width:50%;
@@ -151,4 +156,97 @@ body{
     word-spacing: 3px;
     margin:5%;
 }
+
+
+.others{
+    display:flex;
+    width:90%;
+    /*border: 5px solid white;*/
+    margin:0% auto 5% auto;
+}
+.others a{
+    width:50%;
+}
+.others img{
+    width:100%;
+}
+.others .ot{
+    width:50%;
+    color:white;
+    background-color:#040720;
+}
+.others .ot h1{
+    font-size: 3rem;;
+    margin:5%;
+    
+}
+.others .ot p{
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin:5%;
+}
+.others .ot a{
+    color:white;
+    text-decoration: none;
+    margin:5% 35%;
+    font-size: 2rem;
+}
+
+.contacts{
+    display:flex;
+    width:90%;
+    /*border: 5px solid white;*/
+    margin:0% auto 5% auto;
+}
+.contacts iframe{
+    width:50%;
+}
+.contacts .con{
+    width:50%;
+    color:white;
+    /*background-color:rgb(31, 29, 29);*/
+    background-color:#1B1811
+}
+.contacts .con h1{
+    text-align:center;
+    font-size: 3rem;;
+    margin:5%;
+    
+}
+.contacts .con .cont{
+    font-size: 1.5rem;
+    margin:8% 10%;
+}
+
+
+.footer{
+    background-color: #03040c;
+    text-align:center;
+}
+.follow{
+    padding:1rem 0;
+}
+.follow a{
+    text-decoration: none;
+    height:2.5rem;
+    width:2.5rem;
+    line-height:2.5rem;
+    margin:0.3rem;
+    color:white;
+    background-color: #ff3c78;
+    font-size: 1.2rem;
+    border:1px solid white;
+    border-radius:50%;
+    transition:transform 0.3s;
+}
+.follow a:hover{
+    transform:scale(1.2);
+}
+.footer h1{
+    color:white;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
     
