@@ -1,13 +1,26 @@
 *{
     overflow:hidden;
 }
-body{
-    text-align:center;
-    background-color:#0e1538;
-    background: url(images/bg.jpg);
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width: 991.1px) {
+    body{
+        text-align:center;
+        background-color:#0e1538;
+        background: url(images/bg.jpg);
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 991px) {
+    body{
+        text-align:center;
+        background-color:#0e1538;
+        background: url(images/bg.jpg);
+        background-position:top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:1000px;
+    }
 }
 .stars span{
     position:absolute;
