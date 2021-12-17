@@ -139,7 +139,7 @@ body{
     .banner .motto{
         color:whitesmoke;
         width:70%;
-        padding:270px 120px;
+        padding:270px 100px;
     }
 }
 .banner .motto h1,h2{
@@ -161,7 +161,7 @@ body{
 }
 @media screen and (max-width: 991px) {
     .banner .motto p{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .banner .motto button{
         background-color: #ff3c78;
