@@ -66,6 +66,10 @@ body{
         width:100%;
         text-align:center;
     }
+    .headlogo img{
+        width:350px;
+        height:130px;
+    }
     .headmenu{
         visibility: hidden;
     }
@@ -124,10 +128,19 @@ body{
     /*height:800px;*/
     margin:0% auto 5% auto;
 }
-.banner .motto{
-    color:whitesmoke;
-    width:45%;
-    padding:270px 150px;
+@media screen and (min-width: 991.1px) {
+    .banner .motto{
+        color:whitesmoke;
+        width:45%;
+        padding:270px 150px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .banner .motto{
+        color:whitesmoke;
+        width:70%;
+        padding:270px 120px;
+    }
 }
 .banner .motto h1,h2{
     margin:0;
@@ -138,12 +151,25 @@ body{
 .banner .motto h2{
     font-size: 3.8rem;
 }
-.banner .motto button{
-    /*background-color: rgb(106, 201, 106);*/
-    background-color: #ff3c78;
-    padding: 5px 10px;
-    color:white;
-    font-style: bold;
+@media screen and (min-width: 991.1px) {
+    .banner .motto button{
+        background-color: #ff3c78;
+        padding: 5px 10px;
+        color:white;
+        font-style: bold;
+    }
+}
+@media screen and (max-width: 991px) {
+    .banner .motto p{
+        font-size: 1.5rem;
+    }
+    .banner .motto button{
+        background-color: #ff3c78;
+        padding: 5px 10px;
+        color:white;
+        font-style: bold;
+        font-size: 2rem;
+    }   
 }
 .banner .motto button:hover{
     padding:5px 13px;
@@ -219,6 +245,7 @@ body{
     letter-spacing: 1px;
     word-spacing: 3px;
     margin:5%;
+    font-size: 1.3rem;
 }
 
 
@@ -248,6 +275,7 @@ body{
     letter-spacing: 1px;
     word-spacing: 3px;
     margin:5%;
+    font-size: 1.3rem;
 }
 .others .ot a{
     color:white;
@@ -270,6 +298,8 @@ body{
 .others .ot a:hover:after{
     width:100%;
 }
+
+
 .contacts{
     display:flex;
     width:90%;
