@@ -5,5 +5,5 @@
    <img src="https://img.shields.io/github/stars/Sheikh-Tafsir/octo-journey.github.io"/>
    <img src="https://img.shields.io/github/forks/Sheikh-Tafsir/octo-journey.github.io"/>
 </p>
-<p align="center">link</p>
+<h2 align="center">link</h2>
 https://sheikh-tafsir.github.io/octo-journey.github.io/
