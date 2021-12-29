@@ -8,11 +8,11 @@
 
 <h1 align="center">Web View</h1>
 
-<h2 align="center">HomePage</h2>
+## HomePage
 
 ![1](https://user-images.githubusercontent.com/83116065/147655624-3a90bf1a-cd8c-47bb-9b40-d2572a56b09a.JPG)
 
-<h2 align="center">Other Services</h2>
+## Other Services
 
 ![3](https://user-images.githubusercontent.com/83116065/147655798-4392041c-ef09-49eb-8cc5-e131e7627ace.JPG)
 
