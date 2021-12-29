@@ -1,16 +1,19 @@
 <h1 align="center">Octo Journey</h1>
 <p align="center">
    <img src="https://img.shields.io/badge/language-JavaScript-red?style"/>
-   <img src="https://img.shields.io/github/license/Sheikh-Tafsir/octo-journey.github.io"/>
+   <img src="https://img.shields.io/github/license/Sheikh-Tafsir/Algo-Easy"/>
    <img src="https://img.shields.io/github/stars/Sheikh-Tafsir/octo-journey.github.io"/>
    <img src="https://img.shields.io/github/forks/Sheikh-Tafsir/octo-journey.github.io"/>
 </p>
 
-<h1 align="center">Web View</h1>
+<h1 align="center">Web Visuals</h1>
 
-## HomePage
+## Desktop View
 
 ![1](https://user-images.githubusercontent.com/83116065/147655624-3a90bf1a-cd8c-47bb-9b40-d2572a56b09a.JPG)
+
+## Smartphone View
+![269919354_616195072922680_1159512100037681828_n](https://user-images.githubusercontent.com/83116065/147656661-05ac2d1c-ed89-49e2-8ba3-3d9ebdad1f80.jpg)
 
 ## Other Services
 
