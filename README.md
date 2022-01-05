@@ -19,7 +19,7 @@
 
 ![3](https://user-images.githubusercontent.com/83116065/147655798-4392041c-ef09-49eb-8cc5-e131e7627ace.JPG)
 
-<h2 align="center">Languages & Tools</h2>
+## Languages & Tools
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5)
@@ -27,5 +27,5 @@
 ![IntellIJ](https://img.shields.io/badge/-IntellIJ%20IDEA-000000?style=flat&logo=intellij%20idea)<br />
 
 
-<h2 align="center">link</h2>
+## link
 https://sheikh-tafsir.github.io/octo-journey.github.io/
