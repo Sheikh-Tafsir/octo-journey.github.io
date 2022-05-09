@@ -1,5 +1,6 @@
 *{
     overflow-x: hidden;
+
 }
 body{
     /*background-color:rgb(31, 29, 29);*/
@@ -8,6 +9,8 @@ body{
     padding:0;
     font-family: 'Poppins', sans-serif;
 }
+
+/*header*/
 @media screen and (min-width: 991.1px) {
     .header{
         display:flex;
@@ -58,7 +61,6 @@ body{
 }
 @media screen and (max-width: 991px) {
     .header{
-        /*display:flex;*/
         width:100%;
         background:linear-gradient(90deg,transparent,black);
         padding:1% 0 0 0;
@@ -137,7 +139,7 @@ body{
 }
 
 
-
+/*mid background*/
 .banner{
     background-image: url(images/bg1.jpg);
     background-position: center;
@@ -151,6 +153,7 @@ body{
         color:whitesmoke;
         width:55%;
         padding:270px 150px;
+
     }
 }
 @media screen and (max-width: 991px) {
@@ -162,6 +165,17 @@ body{
 }
 .banner .motto h1,h2{
     margin:0;
+    -webkit-text-stroke:1px #fff;
+    color:transparent;
+    background:url(images/back.png);
+    -webkit-background-clip:text;
+    background-position; 0 0;
+    animation:back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position:2000px 0;
+    }
 }
 .banner .motto h1{
     font-size: 5rem;
@@ -211,81 +225,105 @@ body{
     color:#ff3c78;
 }
 
-
-.types{
-    background-color: black;
-
-    display:flex;
-    margin:0% auto 5% auto;
-}
-
-.links{
-    background-color:rgb(22, 21, 21);
-    width:25%;
-    text-align: center;
-    transition:transform 0.1s;
-}
-
-.links:hover{
-    transform:scale(0.9);
-    border: 3px solid #ff3c78;
-}
-.links img{
-    width:100%;
-}
-@media screen and (min-width: 991.1px) {
-    .links a{
-        text-decoration: none;
-        border-radius:10px;
-        color:white;
-        font-size: 3rem;
-        font-weight:italic;
+@media screen and (min-width: 992px) {
+    .place-bar{
+        display:flex;
+        width:90%;
+        background-color:#1F1F1F;
+        margin: 0 5% ;
+        height:1100px;
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 991px) {
-    .links a{
+    .place-bar{
+        display:flex;
+        width:95%;
+        background-color:#1F1F1F;
+        margin: 0 2.5% ;
+        height:1100px;
+        overflow: hidden;
+    }
+}
+
+
+/*divisions menu*/
+.link-pair{
+    width:25%;
+    min-height:100%;
+}
+.link-pair:nth-child(2n -1){
+    transform: translate(0,15%);
+}
+.place-bar::-webkit-scrollbar {
+  display: none;
+
+}
+
+@media screen and (min-width: 992px) {
+    .links{
+        text-align:center;
+        margin: 10% 0%;
+        overflow: hidden;
+
+    }
+}
+@media screen and (max-width: 991px) {
+    .links{
+        text-align:center;
+        margin: 10% 3%;
+        overflow: hidden;
+
+    }
+}
+.links a{
         text-decoration: none;
         border-radius:10px;
         color:white;
         font-size: 2rem;
         font-weight:italic;
-    }
+
 }
-.links a:hover{
-    color:#ff3c78;
+.links img{
+    transition: 0.3s all ease-in-out;
 }
+.links:hover img{
+    transform:scale(1.1);
+
+}
+.links .city{
+    transform: translate(0, -400%);
+    color:#FFF;
+    font-size:2.5rem;
+    background:linear-gradient(45deg,transparent,black);
+    margin: 0 4.5%;
+    padding: 1% 0;
+    visibility:hidden;
+    transition: 0.3s all ease-in-out;
+}
+.links:hover .city{
+    visibility:visible;
+}
+
+
+/*about us*/
 .about{
     display:flex;
     width:90%;
-    /*border: 5px solid white;*/
     margin:0% auto 5% auto;
 
 }
 
 .about img{
     width:50%;
-    /*transform: translate(-35%,0);
-    transition: transform 0.6s;*/
 }
 
 .about .ab{
     width:50%;
     color:white;
-    background-color:rgb(31, 29, 29);
-    /*transform: translate(35%,0);
-    transition: transform 0.6s;*/
-}
+    background-color:#040720;
 
-/*.about:hover .ab{
-    visibility:visible;
-    transform: translate(0%,0);
-    transition: transform 0.6s;
 }
-.about:hover .abtImg{
-    transform: translate(0%,0);
-    transition: transform 0.6s;
-}*/
-
 
 .about .ab h1{
     font-size: 3rem;;
@@ -310,10 +348,10 @@ body{
     }
 }
 
+/*other services*/
 .others{
     display:flex;
     width:90%;
-    /*border: 5px solid white;*/
     margin:0% auto 5% auto;
 }
 .others a{
@@ -325,7 +363,7 @@ body{
 .others .ot{
     width:50%;
     color:white;
-    background-color:#040720;
+    background-color:#1B1811
 }
 .others .ot h1{
     font-size: 3rem;;
@@ -372,6 +410,7 @@ body{
 }
 
 
+/*contacts*/
 .contacts{
     display:flex;
     width:90%;
@@ -385,7 +424,7 @@ body{
     width:50%;
     color:white;
     /*background-color:rgb(31, 29, 29);*/
-    background-color:#1B1811
+    background-color:rgb(31, 29, 29);
 }
 .contacts .con h1{
     text-align:center;
@@ -399,6 +438,7 @@ body{
 }
 
 
+/*footer*/
 .footer{
     background-color: #03040c;
     text-align:center;
