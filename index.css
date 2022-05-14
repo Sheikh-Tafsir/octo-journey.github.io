@@ -1,6 +1,5 @@
 *{
     overflow-x: hidden;
-
 }
 body{
     background-color: rgb(15, 15, 15);
@@ -203,6 +202,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     margin:0% auto 5% auto;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
 }
 .banner-light{
     background-image: url(images/bg.jpg);
@@ -210,6 +210,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     margin:0% auto 5% auto;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
 }
 @media screen and (min-width: 991.1px) {
     .banner .motto{
@@ -523,6 +524,7 @@ body{
     display:flex;
     width:90%;
     margin:0% auto 5% auto;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
 }
 .contacts iframe{
     width:50%;
@@ -531,7 +533,7 @@ body{
     width:50%;
     color:white;
     background-color:rgb(31, 29, 29);
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    
 }
 .contacts .con-light{
     width:50%;
@@ -539,18 +541,54 @@ body{
     background-color: pink;
     -webkit-text-stroke:0.2px #000;
 }
-.contacts .con h1{
+.con-form{
+    background-color: white;
+    padding:2vw 4vw;
+    display:flex;
+    flex-direction:column;
+    max-width:60%;
     text-align:center;
+    border-radius:1%;
+    margin:3% 15%;
+}
+.con-form h1{
+    text-align:center;
+    color:black;
+    font-size: 2rem;;
+    margin:5%;   
+}
+.con-form input{
+    /*background-color:#f5f5f5;*/
+    border: 0;
+    margin:10px 0;
+    padding:15px;
+    /*border:5px;*/
+    border-bottom: 1px solid #ff3c78;
+    outline:none;
+    border-radius:5%;
+}
+.con-form textarea{
+    border: 0;
+    margin:10px 0;
+    padding:25px;
+    border-bottom: 1px solid #ff3c78;
+    outline:none;
+    border-radius:5%;
+}
+.con-form button{
+    background-color: #ff3c78;
+    padding: 8px 10px;
     color:white;
-    font-size: 3rem;;
-    margin:5%;
-    
+    font-style: bold;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    transition:transform 0.5s;
+    margin:0 37%;
 }
-.contacts .con .cont{
-    font-size: 1.5rem;
-    margin:8% 10%;
+.con-form button:hover{
+    transform:scale(0.9);
 }
-
 
 /*footer*/
 .footer{
