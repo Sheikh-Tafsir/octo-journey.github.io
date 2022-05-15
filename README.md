@@ -9,10 +9,10 @@
 <h1 align="center">Web Visuals</h1>
 
 ## Desktop View
-# Dark Mode
+### Dark Mode
 ![1](https://user-images.githubusercontent.com/83116065/168484537-4f3aeb21-16b9-4e3d-a01d-0f4f57dc029b.JPG)
 
-# Light Mode
+### Light Mode
 ![2](https://user-images.githubusercontent.com/83116065/168484573-66b30fb6-2d5a-4868-9ffc-0564c18e65f5.JPG)
 
 ## Smartphone View
