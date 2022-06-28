@@ -1,4 +1,34 @@
 let color=0;
+let mode=localStorage.getItem("mode");
+//alert(mode);
+if(mode!="dark"){
+    document.querySelector("body").classList.add("body-light");
+        document.querySelector(".header").classList.add("header-light");
+        document.querySelector(".headmenu").classList.add("headmenu-light");
+        document.querySelector(".banner").classList.add("banner-light");
+        document.querySelector(".motto").classList.add("motto-light");
+        document.querySelector(".place-bar").classList.add("place-bar-light");
+        document.querySelector(".ab").classList.add("ab-light");
+        document.querySelector(".ot").classList.add("ot-light");
+        document.querySelector(".con").classList.add("con-light");
+        document.querySelector(".footer").classList.add("footer-light");
+        document.querySelector('.footer').getElementsByTagName('h1')[0].style.color="black";
+    
+        if (window.innerWidth>=0 && window.innerWidth<992){
+            var ainside = document.querySelector('.headmenu').getElementsByTagName('a');
+            for(i=0;i<ainside.length;i++) {
+                ainside[i].style.color="black";
+            }
+            ainside = document.querySelector('.headmenu').getElementsByTagName('i');
+            for(i=0;i<ainside.length;i++) {
+                ainside[i].style.color="black";
+            }
+        }
+        
+        document.querySelector(".dark").style.visibility = "visible";
+        document.querySelector(".light").style.visibility = "hidden";
+}
+
 function settmax(){
     var myVar=document.querySelector(".headmenu");
     myVar.classList.add("headmenu-ax");
@@ -12,9 +42,11 @@ function settmin(){
     document.querySelector(".bars").style.visibility = "visible";
 }
 function settmode(){
-    color++;
-    color%=2;
-    if(color%2==1){
+    /*color++;
+    color%=2;*/
+    let mode=localStorage.getItem("mode");
+    if(mode=="dark"){
+        localStorage.setItem("mode","light");
         document.querySelector("body").classList.add("body-light");
         document.querySelector(".header").classList.add("header-light");
         document.querySelector(".headmenu").classList.add("headmenu-light");
@@ -42,6 +74,7 @@ function settmode(){
         document.querySelector(".light").style.visibility = "hidden";
     }
     else{
+        localStorage.setItem("mode","dark");
         document.querySelector("body").classList.remove("body-light");
         document.querySelector(".header").classList.remove("header-light");
         document.querySelector(".headmenu").classList.remove("headmenu-light");
@@ -69,4 +102,6 @@ function settmode(){
         document.querySelector(".light").style.visibility = "visible";
     }
 }
+
+
 
