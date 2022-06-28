@@ -9,11 +9,14 @@
 <h1 align="center">Web Visuals</h1>
 
 ## Desktop View
+### Dark Mode
+![1](https://user-images.githubusercontent.com/83116065/168484537-4f3aeb21-16b9-4e3d-a01d-0f4f57dc029b.JPG)
 
-![1](https://user-images.githubusercontent.com/83116065/147655624-3a90bf1a-cd8c-47bb-9b40-d2572a56b09a.JPG)
+### Light Mode
+![2](https://user-images.githubusercontent.com/83116065/168484573-66b30fb6-2d5a-4868-9ffc-0564c18e65f5.JPG)
 
 ## Smartphone View
-![269919354_616195072922680_1159512100037681828_n](https://user-images.githubusercontent.com/83116065/147656661-05ac2d1c-ed89-49e2-8ba3-3d9ebdad1f80.jpg)
+![3](https://user-images.githubusercontent.com/83116065/168484597-1a8a5a85-da0a-44af-9f32-cf8d5646bd8c.jpg)
 
 ## Other Services
 
@@ -24,7 +27,7 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS-000000?style=flat&logo=css3)
-![IntellIJ](https://img.shields.io/badge/-IntellIJ%20IDEA-000000?style=flat&logo=intellij%20idea)<br />
+![Visual Studio](https://img.shields.io/badge/-Visual%20Studio-000000?style=flat&logo=Visual%20Studio)<br />
 
 
 ## link
