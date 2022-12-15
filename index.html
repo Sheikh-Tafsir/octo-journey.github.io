@@ -11,7 +11,11 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>   
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>    
         <script src="https://kit.fontawesome.com/96676e27cf.js" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script> 
     </head>
     <body>
         <a id="Home"></a>
@@ -51,14 +55,14 @@
             <h1 class="sec">SERVICES</h1>
         </div>
 
-        <div class="place-bar">
+        <!--<div class="place-bar">
             <div class="link-pair">
                 <div class="links">
-                    <a href="calculator.html"><img src="images/dhaka.jpg" alt="Girl in a jacket" width="280" height="380"></a><br>
+                    <a href="blogwrite.html"><img src="images/dhaka.jpg" alt="Girl in a jacket" width="280" height="380"></a><br>
                     <div class="city">Dhaka</div>
                 </div>
                 <div class="links">
-                    <a href="lengthConverter.html"><img src="images/sylhet.jpg" alt="Girl in a jacket" width="280" height="380"></a><br>
+                    <a href="blogread.html"><img src="images/sylhet.jpg" alt="Girl in a jacket" width="280" height="380"></a><br>
                     <div class="city">Sylhet</div>
                 </div>
             </div>
@@ -92,8 +96,21 @@
                     <div class="city">Mymensingh</div>
                 </div>
             </div>
+            
+        </div>-->
+        <div class="service-bar">
+            <div class="srvc">
+                <h1>Wanna write new post?</h1>
+                <h1>Or read the old ones?</h1>
+                <p>Here are the personal posts of my tours and picnics in different time and places. You can read my all posts here</p>
+                <p>This is personal website but i can write about my family and friends and their experience with me</p>
+                <a href="blogwrite.html">Welcome</a>
+            </div>
+            <img src="images/service.jpg" alt="Girl in a jacket" width="500" height="450" class="abtImg">
+
         </div>
         <br><br><br>
+
 
         <a id="About"></a>
         <div class="headline">
@@ -148,7 +165,21 @@
                 
             </div>
         </div>
-        
+
+        <!--<div class="blogposts" style="color:white">
+            <h1 style="color:white">here starts</h1>
+
+        </div>
+        <div>
+            <form action="" class="dataInputForm">
+                <input type="text" class="caption">
+                <input type="text" class="story">
+                <input type="text" class="location">
+                <input type="text" class="imageLink">
+                <button type="submit" class="dbInputBut">submit</button>
+                <button  class="dbOutputBut">get</button>
+            </form>
+        </div>-->
         
         <div class="footer">
             <div class="follow">
@@ -160,8 +191,55 @@
             </div>
             <h1>Created By Mr. Sheikh| All Rights Reserved</h1>
         </div>
-    </div>
+
+    <!--<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        import {getFireStore, setDoc, addDoc, doc, collection} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyB6mEjZ46kmU353sGSSpj_zJm6oSVgvRlY",
+            authDomain: "octojourney-3605c.firebaseapp.com",
+            databaseURL: "https://octojourney-3605c-default-rtdb.firebaseio.com",
+            projectId: "octojourney-3605c",
+            storageBucket: "octojourney-3605c.appspot.com",
+            messagingSenderId: "697163287268",
+            appId: "1:697163287268:web:069715fdb463dda6c5baf1",
+            measurementId: "G-QFXKVMCVYR"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        document.querySelector(".dbInputBut").addEventListener("click", ()=>{
+            alert("hql");
+            var caption=document.querySelector(".caption").value;
+            var story=document.querySelector(".story").value;
+            addDoc(collection(db,"postdata"),{
+                caption:caption,
+                story:story,
+            }).then(()=>{
+                console.log('data submitted');
+                alert("ok");
+            }).catch((error) =>{
+                console.log(error);
+            });
+
+        });
+
+    </script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="index.js"></script>
+        <script src="server.js"></script>
+    
     </body>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="index.js"></script>
+    
+    
 </html>

@@ -23,7 +23,8 @@ body{
         background:linear-gradient(90deg,transparent,black);
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
         padding:1% 0 0 0;
-        z-index:1030;
+        z-index:10030;
+        height:8vh;
     }
     .header-light{
         display:flex;
@@ -37,13 +38,16 @@ body{
         width:25%;
         text-align:center;  
     }
+    .headlogo img{
+        height:92%;
+    }
      .headbar{
         visibility:hidden;
     }
     .headmenu{
         width:75%;
         text-align:center;
-        padding:20px;
+        padding:10px;
     }
     .headmenu a{
         text-decoration: none;
@@ -199,7 +203,7 @@ body{
 .banner{
     background-image: url(images/bg1.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     margin:0% auto 5% auto;
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
@@ -236,9 +240,9 @@ body{
     margin:0;
     -webkit-text-stroke:1px #fff;
     color:transparent;
-    background:url(images/back.png);
+    background:url(images/homeslide.png);
     -webkit-background-clip:text;
-    background-position; 0 0;
+    background-position: 0 0;
     animation:back 20s linear infinite;
 }
 @keyframes back{
@@ -249,25 +253,36 @@ body{
 .banner .motto h1{
     font-size: 5rem;
 }
-.banner .motto h2{
-    font-size: 3.8rem;
-}
+
 @media screen and (min-width: 991.1px) {
+    .banner .motto h2{
+        font-size: 3.8rem;
+        margin-bottom: 4vh;
+    }
     .banner .motto p{
-        font-size: 1.2rem;
-        -webkit-text-stroke:0.1px #FFF;
+        font-size: 1.3rem;
+        margin-left:-0vw;
+        
     }
     .banner .motto button{
         background-color: #ff3c78;
         padding: 5px 10px;
         color:white;
         font-style: bold;
+        border:none;
+        margin-top: 3vh;
+        transition: 0.1s linear;
     }
 }
 @media screen and (max-width: 991px) {
+    .banner .motto h2{
+        font-size: 3.8rem;
+        margin-bottom: 2vh;
+    }
     .banner .motto p{
         font-size: 0.7rem;
-        -webkit-text-stroke:0.1px #FFF;
+        margin:0;
+        
     }
     .banner .motto button{
         background-color: #ff3c78;
@@ -275,6 +290,7 @@ body{
         color:white;
         font-style: bold;
         font-size: 1.6rem;
+        margin-top:3vh;
     }   
 }
 .banner .motto button:hover{
@@ -399,6 +415,72 @@ body{
 }
 
 
+/*----------------service provided---------*/
+.service-bar{
+    display:flex;
+    width:90%;
+    margin:0% auto 5% auto;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+.srvc{
+    width:50%;
+    color:white;
+    background-color:rgb(31, 29, 29);
+    padding-top:3%;
+}
+.srvc-light{
+    color:black;
+    background-color: pink;
+    -webkit-text-stroke:0.2px #000;
+}
+.srvc h1,p{
+    width:90%;
+    margin:auto;
+}
+@media screen and (min-width: 992px) {
+    .srvc h1{
+        font-size:2.6rem;
+        margin-bottom:1.5vh;
+    }
+    .srvc p{
+        font-size:1.3rem;
+        margin-top:4vh;
+        margin-bottom:5vh;
+    }
+    .srvc a{
+        text-align: center;
+        font-size:1.5rem;
+        width:10%;
+        color:white;
+        margin-left:17vw;
+    }
+    .service-bar img{
+        width:50%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .srvc h1{
+        font-size:2.6rem;
+        margin-bottom:0.3vh;
+    }
+    .srvc p{
+        font-size:1.2rem;
+        margin-top:1vh;
+        margin-bottom:0.8vh;
+    }
+    .srvc a{
+        text-align: center;
+        font-size:1.5rem;
+        width:10%;
+        color:white;
+        margin-left:17vw;
+    }
+    .service-bar img{
+        width:50%;
+    }
+}
+
+
 /*about us*/
 .about{
     display:flex;
@@ -425,9 +507,10 @@ body{
 }
 
 .about .ab h1{
-    font-size: 3rem;;
+    font-size: 2.6rem;;
     color:white;
     margin:5%;
+    margin-top:7%;
     
 }
 
@@ -542,7 +625,7 @@ body{
     -webkit-text-stroke:0.2px #000;
 }
 .con-form{
-    background-color: white;
+    background-color: rgb(232, 220, 220);
     padding:2vw 4vw;
     display:flex;
     flex-direction:column;
@@ -558,7 +641,7 @@ body{
     margin:5%;   
 }
 .con-form input{
-    /*background-color:#f5f5f5;*/
+    background-color:transparent;
     border: 0;
     margin:10px 0;
     padding:15px;
@@ -568,6 +651,7 @@ body{
     border-radius:5%;
 }
 .con-form textarea{
+    background-color:transparent;
     border: 0;
     margin:10px 0;
     padding:25px;
@@ -653,3 +737,24 @@ body{
         font-family: "Lucida Console", "Courier New", monospace;
     }
 }
+
+/*-------------------scrollbar------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    background: transparent;
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d9698a
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff3c78
+  }

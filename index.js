@@ -7,18 +7,17 @@ if(mode!="dark"){
         document.querySelector(".headmenu").classList.add("headmenu-light");
         document.querySelector(".banner").classList.add("banner-light");
         document.querySelector(".motto").classList.add("motto-light");
-        document.querySelector(".place-bar").classList.add("place-bar-light");
+        //document.querySelector(".place-bar").classList.add("place-bar-light");
+        document.querySelector(".srvc").classList.add("srvc-light");
         document.querySelector(".ab").classList.add("ab-light");
         document.querySelector(".ot").classList.add("ot-light");
         document.querySelector(".con").classList.add("con-light");
         document.querySelector(".footer").classList.add("footer-light");
         document.querySelector('.footer').getElementsByTagName('h1')[0].style.color="black";
+        document.querySelector('.dataInputForm').classList.add("dataInputForm-light");
     
         if (window.innerWidth>=0 && window.innerWidth<992){
-            var ainside = document.querySelector('.headmenu').getElementsByTagName('a');
-            for(i=0;i<ainside.length;i++) {
-                ainside[i].style.color="black";
-            }
+            
             ainside = document.querySelector('.headmenu').getElementsByTagName('i');
             for(i=0;i<ainside.length;i++) {
                 ainside[i].style.color="black";
@@ -52,12 +51,14 @@ function settmode(){
         document.querySelector(".headmenu").classList.add("headmenu-light");
         document.querySelector(".banner").classList.add("banner-light");
         document.querySelector(".motto").classList.add("motto-light");
-        document.querySelector(".place-bar").classList.add("place-bar-light");
+        //document.querySelector(".place-bar").classList.add("place-bar-light");
+        document.querySelector(".srvc").classList.add("srvc-light");
         document.querySelector(".ab").classList.add("ab-light");
         document.querySelector(".ot").classList.add("ot-light");
         document.querySelector(".con").classList.add("con-light");
         document.querySelector(".footer").classList.add("footer-light");
         document.querySelector('.footer').getElementsByTagName('h1')[0].style.color="black";
+        document.querySelector('.dataInputForm').classList.add("dataInputForm-light");
     
         if (window.innerWidth>=0 && window.innerWidth<992){
             var ainside = document.querySelector('.headmenu').getElementsByTagName('a');
@@ -80,12 +81,14 @@ function settmode(){
         document.querySelector(".headmenu").classList.remove("headmenu-light");
         document.querySelector(".banner").classList.remove("banner-light");
         document.querySelector(".motto").classList.remove("motto-light");
-        document.querySelector(".place-bar").classList.remove("place-bar-light");
+        //document.querySelector(".place-bar").classList.remove("place-bar-light");
+        document.querySelector(".srvc").classList.remove("srvc-light");
         document.querySelector(".ab").classList.remove("ab-light");
         document.querySelector(".ot").classList.remove("ot-light");
         document.querySelector(".con").classList.remove("con-light");
         document.querySelector(".footer").classList.remove("footer-light");
         document.querySelector('.footer').getElementsByTagName('h1')[0].style.color="white";
+        document.querySelector('.dataInputForm').classList.remove("dataInputForm-light");
     
         if (window.innerWidth>=0 && window.innerWidth<992){
             var ainside = document.querySelector('.headmenu').getElementsByTagName('a');
