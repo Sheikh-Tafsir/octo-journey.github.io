@@ -19,17 +19,45 @@ var contactFormDB = firebase.database().ref("batman");
 firebase.database().ref("/").child("name").update({
     purpose: "adding Name" 
 });
+
+/*var fileInput=document.querySelector(".imageLink");
+fileInput.addEventListener("change",e=>{
+    const file=fileInput.files[0];
+    const reader=new FileReader();
+        
+    reader.addEventListener("load",()=>{
+        console.log(reader.result);
+    });
+    reader.readAsDataURL(file);
+});*/
+
 document.querySelector(".dbInputBut").addEventListener("click", ()=>{
     //alert(document.querySelector(".caption").value);
     //e.preventDefault();
     var caption=document.querySelector(".caption").value;
     var story=document.querySelector(".story").value;
     var location=document.querySelector(".location").value;
-    var imageLink=document.querySelector(".imageLink").value;
+    
+    //var imageLink=document.querySelector(".imageLink").value;
     //console.log(caption +" "+ story);
     //alert(caption +" "+ story);
+    var fileInput=document.querySelector(".imageLink");
+    //fileInput.addEventListener("change",e=>{
+        const file=fileInput.files[0];
+        const reader=new FileReader();
+            
+        reader.addEventListener("load",()=>{
+            //console.log(reader.result);
+            var imageLink=reader.result;
+            //alert(imageLink);
+            saveMessages(caption,story,location,imageLink);
 
-    saveMessages(caption,story,location,imageLink);
+        });
+        reader.readAsDataURL(file);
+    //});
+    
+
+    //saveMessages(caption,story,location,imageLink);
 });
 
 const saveMessages = (caption,story,location,imageLink) =>{
@@ -40,6 +68,7 @@ const saveMessages = (caption,story,location,imageLink) =>{
         location:location,
         imageLink:imageLink,
     });
+    //alert("hel");
 };
 
 //document.querySelector("#services").addEventListener("click", ()=>{

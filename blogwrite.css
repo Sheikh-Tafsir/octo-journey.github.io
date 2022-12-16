@@ -1,20 +1,43 @@
 body{
-    width:200vw;
-
+    
 }
 .blogInOut{
+    width:200vw;
     display:flex;
     flex-direction: row;
     transition: 0.3s linear;
 }
-.readwriteExcBut{
-    background-color: transparent;
-    font-size:1.4rem;
-    font-weight: bold;
-    border:none;
-    color:rgb(84, 82, 82);
-    cursor:pointer;
-    margin-right:1.4vw;
+
+@media screen and (min-width: 992px) {
+    .readwriteExcBut{
+        background-color: transparent;
+        font-size:1.4rem;
+        font-weight: bold;
+        border:none;
+        color:rgb(84, 82, 82);
+        cursor:pointer;
+        margin-right:1.4vw;
+    }
+}
+@media screen and (max-width: 991px) {
+    .readwriteExcBut{
+        background-color: transparent;
+        font-size:1.4rem;
+        font-weight: bold;
+        border:none;
+        color:rgb(84, 82, 82);
+        cursor:pointer;
+        margin-right:1.4vw;
+        transform: translateX(52vw);
+    }
+    .headmenu i{
+        transform: translate(-17vw,1.5vh);
+        color:rgb(84, 82, 82);
+        
+    }
+    .headmenu i:hover{
+        color:white;
+    }
 }
 .readwriteExcBut:hover{
     color:white;
@@ -26,27 +49,54 @@ body{
     background-size:100vw 100vh ;
     overflow: hidden;
 }
-.dataInputForm{
-    display:flex;
-    flex-direction: column;
-    width:50%;
-    height:65vh;
-    position:relative;
-    left:25%;
-    top:20vh;
-    background-color:rgba(0,0,0,0.5) ;
+@media screen and (min-width: 992px) {
+    .dataInputForm{
+        display:flex;
+        flex-direction: column;
+        width:50%;
+        height:65vh;
+        position:relative;
+        left:25%;
+        top:20vh;
+        background-color:rgba(0,0,0,0.5) ;
+    }
+}
+@media screen and (max-width: 991px) {
+    .dataInputForm{
+        display:flex;
+        flex-direction: column;
+        width:86%;
+        height:50vh;
+        position:relative;
+        left:7%;
+        top:20vh;
+        background-color:rgba(0,0,0,0.5) ;
+    }
 }
 .dataInputForm-light{
     background-color:rgba(254,66,142,0.5);
 }
 
-.caption, .location, .story, .imageLink, .dbInputBut{
-    width:80%;
-    height:8%;
-    margin-left:10%;
-    margin-bottom:2%;
-    padding-left:2%;
-    outline: none;
+@media screen and (min-width: 992px) {
+    .caption, .location, .story, .imageLink, .dbInputBut{
+        width:80%;
+        height:8%;
+        margin-left:10%;
+        margin-bottom:2%;
+        padding-left:2%;
+        outline: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .caption, .location, .story, .imageLink, .dbInputBut{
+        width:80%;
+        height:8%;
+        margin-left:10%;
+        margin-bottom:2%;
+        padding-left:2%;
+        outline: none;
+        font-size:2rem;
+    }
 }
 .caption{
     margin-top:8%;
@@ -54,32 +104,69 @@ body{
 .story{
     height:30%;
 }
-.dbInputBut{
-    width:83%;
-    background-color: #ff3c78;
-    border:none;
-    outline: none;
-    color:white;
-    font-size:1.1rem;
-    font-weight: bold;
+.imageLink{
+    width:80.5%;
+    background-color: white;
+    color:black;
+    text-align: center;
+
+    padding-top:1vh;
+    height:4vh;
 }
+
+@media screen and (min-width: 921px) {
+    .dbInputBut{
+        width:82.5%;
+        background-color: #ff3c78;
+        border:none;
+        outline: none;
+        color:white;
+        font-size:1.1rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 991px) {
+    .dbInputBut{
+        width:82.5%;
+        background-color: #ff3c78;
+        border:none;
+        outline: none;
+        color:white;
+        font-size:2rem;
+        font-weight: bold;
+
+    }
+}
+
 .blogposts{
     margin-top:15vh;
     width:100vw;
     display: flex;
     flex-wrap: wrap;
-    
-
 }
-
-.blogpost{
-    width:45vw;
-    height:87vh;
-    background-color: rgb(31, 29, 29);
-    margin-left:3vw;
-    margin-bottom: 5vh;
-    border-radius: 7px;
-    
+@media screen and (min-width: 992px) {
+    .blogpost{
+        width:45vw;
+        height:87vh;
+        background-color: rgb(31, 29, 29);
+        margin-left:3vw;
+        margin-bottom: 5vh;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .blogpost{
+        width:90vw;
+        height:87vh;
+        background-color: rgb(31, 29, 29);
+        margin-left:5vw;
+        margin-bottom: 5vh;
+        border-radius: 10px;
+    }
+}
+.blogpost-light{
+    background-color: #ff3c78;
+    color:black;
 }
 .blogpost h2, p{
     width:90%;
@@ -106,5 +193,5 @@ body{
     height:40vh;
     width:90%;
     margin-left:5%;
-    border-radius: 10px;
+    border-radius: 13px;
 }
