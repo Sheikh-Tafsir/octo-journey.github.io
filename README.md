@@ -6,7 +6,6 @@
    <img src="https://img.shields.io/github/forks/Sheikh-Tafsir/octo-journey.github.io"/>
 </p>
 
-<h1 align="center">Web Visuals</h1>
 
 ## Desktop View
 ### Dark Mode
@@ -16,11 +15,18 @@
 ![2](https://user-images.githubusercontent.com/83116065/168484573-66b30fb6-2d5a-4868-9ffc-0564c18e65f5.JPG)
 
 ## Smartphone View
-![3](https://user-images.githubusercontent.com/83116065/168484597-1a8a5a85-da0a-44af-9f32-cf8d5646bd8c.jpg)
+![319526930_1343887113030026_8443694567856405501_n](https://user-images.githubusercontent.com/83116065/208138937-40952453-3f30-4190-ba12-d9266b9406aa.jpg)
 
-## Other Services
 
-![3](https://user-images.githubusercontent.com/83116065/147655798-4392041c-ef09-49eb-8cc5-e131e7627ace.JPG)
+## Services
+![image](https://user-images.githubusercontent.com/83116065/208139013-94472028-76b7-4ed7-999c-c19bf129ebaf.png)
+
+## Features
+- Write trave Blogs with pictures
+- View blogs sorted by time
+- Responsive UI
+- Light and Dark theme
+- No server, no sql database 
 
 ## Languages & Tools
 
